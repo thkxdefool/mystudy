@@ -7,5 +7,6 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 public class BrowserSecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http )throws  Exception{
         http.formLogin().and().authorizeRequests().anyRequest().authenticated();
+        System.out.println("aa");
     }
 }
